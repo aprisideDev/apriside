@@ -1,14 +1,13 @@
 /*global jQuery:false */
 (function ($) {
     $(document).ready(function() {
-    	if (window.innerWidth > 768) {
-            $('#fullpage').fullpage({
-                navigation: true,
-                scrollBar: true,
-                anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
-                menu: '.navbar-nav'
-            });
-        }
+        $('#fullpage').fullpage({
+            navigation: true,
+            scrollBar: true,
+            anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
+            menu: '.navbar-nav',
+            responsiveWidth: 768
+        });
 
         particlesJS.load('bg-particles', '/js/particles.json');
     });
