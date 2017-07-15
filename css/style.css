@@ -867,7 +867,6 @@ form.search-form input:focus {
 
 footer {
     background-color: #404040;
-	position: absolute;
 	bottom: 0px;
 	width: 100%;
 }
@@ -1070,7 +1069,9 @@ a.btn:focus{
     .intro-text {
         font-size: 25px;
     }
-
+	footer{
+		position: absolute;
+	}
 
 }
 @media (max-width:768px) {
@@ -1121,7 +1122,13 @@ a.btn:focus{
 	.xs-marginbot-20 {
 		margin-bottom: 20px;
 	}
-
+	.intro-section{
+		padding-top:150px !important;
+		padding-bottom:50px;
+	}
+	.section{
+		padding-top:50px;
+	}
 }
 
 @media (max-width:480px) {

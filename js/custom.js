@@ -1,7 +1,7 @@
 /*global jQuery:false */
 (function ($) {
     $(document).ready(function() {
-    	if (window.innerWidth > 600) {
+    	if (window.innerWidth > 768) {
             $('#fullpage').fullpage({
                 navigation: true,
                 scrollBar: true,
