@@ -159,7 +159,7 @@ blockquote strong {
 	margin-top: 10px;
 }
 .site-logo a.brand {
-	color: #111;
+	color: white;
 
 	font-size: 32px;
 	font-family: 'Roboto', sans-serif;
@@ -203,7 +203,7 @@ blockquote strong {
 .navbar-custom ul.nav li a {
 	font-size: 12px;
 	letter-spacing: 1px;
-    color: #444;
+	color: white;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -620,6 +620,7 @@ hr.bold {
 	background: #fff;
 	border-bottom: 2px solid #f7f7f7;
 	padding: 40px 20px;
+	box-shadow: 0px 2px 5px grey;
 }
 
 .service-box:hover {
@@ -634,7 +635,6 @@ hr.bold {
 }	
 
 .service-desc h5 {
-	text-transform: uppercase;
 	font-weight: 700;
 	color: #666;
 	font-size: 18px;
@@ -1025,6 +1025,13 @@ a.btn:focus{
 .progress-bar {
   font-size: 14px;
   line-height: 40px;
+}
+
+.media{
+	padding: 10px;
+	margin-bottom:10px;
+	background: white;
+	max-height:300px;
 }
 
 /* Media queries */
