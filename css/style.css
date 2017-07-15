@@ -160,7 +160,7 @@ blockquote strong {
 }
 .site-logo a.brand {
 	color: #111;
-	text-transform: uppercase;
+
 	font-size: 32px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
@@ -173,12 +173,12 @@ blockquote strong {
 	position:fixed;
 	top:0px;
 
-	background: #fff;
+	background: #1ABB9C;
 	z-index: 9999;
 	width:100%;
     box-sizing:border-box;
-	border-bottom: 1px solid #eee;
-	box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid #1ABB9C;
+	box-shadow:0px 0px 20px #1ABB9C;
 }
 
 
@@ -193,10 +193,6 @@ blockquote strong {
 
 .navbar-brand:focus {
     outline: 0;
-}
-
-.nav.navbar-nav {
-    background-color: rgba(255,255,255,.6);
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -433,10 +429,42 @@ hr.bold {
 --- Intro
 ============================ */
 
-.hero { background: url(../img/hero-bg.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 200px 0 200px 0; height: auto; }
-.hero h1 { font-size: 40px; letter-spacing: 12px; margin: 40px 0 10px; font-weight: 900; color: #fff;}
-.hero h1 span { color: #a1a9b0; display: inline-block; }
-.hero p { font-size: 24px; font-weight: 400; color: #fefefe; }
+.intro-section{
+	background-image: url('/img/intro-1-section-bg-pattern.png');
+	background-repeat: repeat !important;
+	background-color: #2A3F54;
+
+	-webkit-animation: bg_img_animation 20s linear infinite;
+	animation: bg_img_animation 20s linear infinite;
+}
+#bg-particles{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+}
+@-webkit-keyframes bg_img_animation {
+
+	0% {
+		background-position: 0 50%;
+	}
+
+	100% {
+		background-position: 40rem 50%;
+	}
+
+}
+
+@keyframes bg_img_animation {
+
+	0% {
+		background-position: 0 50%;
+	}
+
+	100% {
+		background-position: 40rem 50%;
+	}
+}
 .learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
 
@@ -839,6 +867,9 @@ form.search-form input:focus {
 
 footer {
     background-color: #404040;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
 }
 
 footer {
