@@ -1129,6 +1129,12 @@ a.btn:focus{
 	.section{
 		padding-top:50px;
 	}
+	.intro-section{
+		height:50% !important;
+	}
+	.intro-section .fp-tableCell{
+		height:50% !important;
+	}
 	.animated {
 		/*CSS transitions*/
 		-o-transition-property: none !important;
