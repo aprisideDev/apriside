@@ -18,12 +18,16 @@ body {
     height: 100%;
     font-family: 'Ek Mukta', sans-serif;
 	font-weight: 300;
-    color: #666;
+    color: white;
     background-color: #fff;
 	font-size: 16px;
     line-height: 1.6em;
 	font-weight: 400;
 	overflow-x: hidden !important;
+	
+	background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+	background-size: cover;
 }
 
 html {
