@@ -71,9 +71,9 @@ h6 {
 	width:100%;
 	height:100%;
 	background-color:#293F53;
-	background-image: url("../img/net.png");
-    background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url("../img/net_2.png");
+    
+	background-size: 100%;
 }
 .pager{
 	position: relative;
@@ -107,4 +107,25 @@ h6 {
 	-moz-transition: 0.5s ease-out;
 	-o-transition: 0.5s ease-out;
 	transition: 0.5s ease-out;
+}
+.team-row{
+	padding-bottom: 20px;
+}
+.team-box{
+	padding-left:5%;
+	padding-right:5%;
+}
+.team-box .name{
+	color:orange;
+	font-size:25px;
+}
+.team-box .title{
+	color:black;
+	font-size:22px;
+	padding-bottom:10px;
+}
+.team-box .description{
+	
+	color:gray;
+	font-size:22px;
 }
