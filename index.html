@@ -18,7 +18,9 @@
 	<link href="css/animations.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
 	<link href="css/jquery.fullPage.css" rel="stylesheet">
+	<link href="css/style.default.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<style>
 		@font-face {
 			font-family: "nasalization";
@@ -43,9 +45,37 @@
 	</style>
 </head>
 
-<body style="background-color:white;font-family: 'nasalization';">
+<body style="background-color:white;">
+<!--=============== Navbar ===============-->
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home" style="padding:0px;font-family: nasalization;">
+			<img src="img/logo.png" style="width:50px;">
+			apriside
+		  </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            	<li><a href="#home">Home</a></li>
+				<li><a href="#products">Products</a></li>
+		  		<li><a href="#about">About</a></li>
+			  	<li><a href="#team">Team</a></li>
+			  	<li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
 <div class="pager background"></div>
-<div class="pager" style="z-index: 100;box-shadow: 0px 0px 25px black;">
+<a id="home"></a>
+<div class="pager hero" style="z-index: 100;box-shadow: 0px 0px 25px black;">
 	<div class="outer">
 		<div class="middle">
 			<div class="inner" style="text-align: center;">
@@ -57,19 +87,24 @@
 				</div><br>
 				<div class="clearfix"></div>
 				<h1 style="font-family: nasalization;color: white;">Operations efficient as never</h1>
-				<h5 style="font-family: nasalization;color: white; 
-				padding-left:14%; padding-right:14%;">apriside is a software as a service company which offers web-based real-time operations management and optimization software for customers running complex operations.</h2>
+				<h5 style="color: white; padding-left:14%; padding-right:14%;">
+					apriside is a software as a service company which offers web-based real-time operations management and optimization software for customers running complex operations.
+				</h5>
+
+				<br>
+				<a href="#products" class="btn btn-template link-scroll">Go to our Products</a>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="pager" style="background-color:white;min-height:50vh;">
+<a id="products"></a>
+<div class="pager" style="min-height:50vh;">
 	<div class="inner" style="text-align: center;">
-		
-		<h1 style="font-family: nasalization;color: #828282;">Our Products</h1>
 
-		<a href="https://oilfieldos.com">
+		<h1 style="color: #828282;">Our Products</h1>
+
+		<a href="https://oilfieldos.com" style="text-decoration: none;">
 			<div class="product-box inner">
 				<img src="img/oilfieldos_126px.png"><br><br>
 				OilfieldOS
@@ -79,31 +114,33 @@
 	</div>
 </div><hr>
 
-<div class="pager" style="background-color:white;min-height:50vh;">
+<a id="about"></a>
+<div class="pager" style="min-height:50vh;">
 	<div class="inner" style="text-align: center;">
-		
-		<h1 style="font-family: nasalization;color: #828282;">About apriside</h1>
-		<h5 style="font-family: nasalization;color: #828282; 
+
+		<h1 style="color: #828282;">About apriside</h1>
+		<h5 style="color: #828282;
 				padding-left:14%; padding-right:14%;">
 				apriside is a software as a service company which offers web-based real-time operations management and optimization software for customers running complex operations.
-Our solutions give customers better financial control, help them to make informed decisions, manage learning processes and optimize day-to-day aspects of operations. 
+Our solutions give customers better financial control, help them to make informed decisions, manage learning processes and optimize day-to-day aspects of operations.
 Through the use of AI and machine learning our applications boost performance and the analytic capabilities of employees to a level not possible when using fragmented solutions.
-			
+
 		</h5>
 	</div>
 </div><hr>
 
-<div class="pager" style="background-color:white;min-height:50vh;">
+<a id="team"></a>
+<div class="pager" style="min-height:50vh;">
 	<div class="inner" style="text-align: center;">
-		
-		<h1 style="font-family: nasalization;color: #828282;">The team</h1>
+
+		<h1 style="color: #828282;">The Team</h1>
 
 		<div class="team-row col-md-offset-1 col-md-10">
 			<div class="col-md-4 col-sm-12 col-xs-12 team-box inner">
 				<img src="img/team/1.jpg"><br>
 				<span class="name">Andrzej Kwiecien</span><br>
 				<span class="title">CEO/Board Member </span><br><br>
-				<span class="description">Holds MSc Eng degree in drilling engineering. 
+				<span class="description">Holds MSc Eng degree in drilling engineering.
 					9 years of experience in oilfield industry on both service and operator side. Creator of several software applications used by the oilfield operator. Co-founder and CTO at SmartFun.co.
 				</span>
 			</div>
@@ -124,14 +161,14 @@ Through the use of AI and machine learning our applications boost performance an
 				</span>
 			</div>
 		</div>
-		
+
 		<div class="team-row col-md-offset-1 col-md-10">
 			<div class="col-md-4 col-sm-12 col-xs-12 team-box inner">
 				<img src="img/team/4.jpg"><br>
 				<span class="name">Flemming Egtved</span><br>
 				<span class="title">Board of Directors Chairman</span><br><br>
 				<span class="description">
-				COO and founder at Ehubnordic. 30+ years of experience in marketing and finance field. Acquired his knowledge through the work in such a companies as IBM, Nordea, EY and by being involved in with various mergers and acquisitions. 
+				COO and founder at Ehubnordic. 30+ years of experience in marketing and finance field. Acquired his knowledge through the work in such a companies as IBM, Nordea, EY and by being involved in with various mergers and acquisitions.
 				</span>
 			</div>
 			<div class="col-md-4 col-sm-12 col-xs-12 team-box inner">
@@ -147,30 +184,35 @@ Through the use of AI and machine learning our applications boost performance an
 				<span class="name">Lars Andersen</span><br>
 				<span class="title">Board Member</span><br><br>
 				<span class="description">
-				Holds MSc Eng degree in drilling engineering. 22 years of experience in oilfield industry as drilling engineer, drilling supervisor, and drilling superintendent. CEO at Ross Engineering A/S. 
+				Holds MSc Eng degree in drilling engineering. 22 years of experience in oilfield industry as drilling engineer, drilling supervisor, and drilling superintendent. CEO at Ross Engineering A/S.
 				</span>
 			</div>
 		</div>
 	</div>
 </div><hr>
 
-<div class="pager" style="background-color:white;min-height:50vh;">
+<a id="contact"></a>
+<div class="pager" style="min-height:50vh;">
 	<div class="inner" style="text-align: center;">
-		
-		<h1 style="font-family: nasalization;color: #828282;">Contact</h1>
-		<h5 style="font-family: nasalization;color: #828282;">
-			apriside ApS<br><br>
-			Email: <a href="mailto:contact@apriside.com">contact@apriside.com</a><br><br>
-			Address: Bentzonsvej 6, 2000 Frederiksberg, Danmark <br><br>
-			Phone: +45 51493012
-
-		</h5>
+		<iframe class="map"
+				frameborder="0" style="border:0"
+				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJwKokI3hH4mEYjczkkaNjGOAXOHO9BDs&q=Bentzonsvej+6,+Frederiksberg,+Denmark" allowfullscreen>
+		</iframe>
+		<div class="contact-information">
+			<h1 style="color: #828282;">Contact</h1>
+			<h5 style="color: #828282;">
+				apriside ApS<br>
+				Email: <a href="mailto:contact@apriside.com">contact@apriside.com</a><br>
+				Address: Bentzonsvej 6, 2000 Frederiksberg, Danmark <br>
+				Phone: +45 51493012
+			</h5>
+		</div>
 	</div>
 </div>
 
 <!-- Core JavaScript Files -->
-<script src="js/jquery.min.js"></script>	 
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
