@@ -91,15 +91,10 @@ nav.navbar.active .navbar-nav a.nav-link.active, nav.navbar.active .navbar-nav a
   }
 }
 
-
-
-
-
-
 .btn-template {
-  background-image: -webkit-linear-gradient(to left, #ff5f6d, #ffc371);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(to left), color-stop(#ff5f6d), to(#ffc371));
-  background-image: linear-gradient(to left, #2d94a5, #00c4ff);
+  background-image: -webkit-linear-gradient(to left, #227b67, #32bd9e);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(to left), color-stop(#227b67), to(#32bd9e));
+  background-image: linear-gradient(to left, #227b67, #32bd9e);
   padding: 7px 40px;
   color: #fff;
   font-weight: 400;
