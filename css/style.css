@@ -69,12 +69,10 @@ h6 {
 	min-height:100vh;
 	margin:0px;
 
-	background: -webkit-linear-gradient(left, rgba(255,0,4,0) -30%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 80%,rgba(229,0,3,0) 130%);
-
-	/*background-color:#293F53;
-	background-image: url("../img/net_2.png");
-	background-size: 30%;*/
-
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) -30%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 130%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) -30%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 130%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,0) -30%,rgba(255,255,255,1) 15%, rgba(255,255,255,1) 85%,rgba(255,255,255,0) 130%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .pager.hero{
 	background-image: none;
@@ -139,7 +137,7 @@ h6 {
 	padding-bottom:15px;
 }
 .team-box img{
-	width:100%;
+	width:65%;
 }
 .team-box .name{
 	color: #2dba9a;
